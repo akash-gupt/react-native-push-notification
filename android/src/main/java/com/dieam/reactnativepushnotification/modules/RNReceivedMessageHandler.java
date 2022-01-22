@@ -107,14 +107,14 @@ public class RNReceivedMessageHandler {
 
             bundle.putString("priority", priorityString);
 
-            Uri uri = remoteNotification.getImageUrl();
+            // Uri uri = remoteNotification.getImageUrl();
 
-            if(uri != null) {
-                String imageUrl = uri.toString();
+            // if(uri != null) {
+            //     String imageUrl = uri.toString();
               
-                bundle.putString("bigPictureUrl", null);
-                bundle.putString("largeIconUrl", imageUrl);
-            }
+            //     bundle.putString("bigPictureUrl", null);
+            //     bundle.putString("largeIconUrl", imageUrl);
+            // }
         }
 
         Bundle dataBundle = new Bundle();
