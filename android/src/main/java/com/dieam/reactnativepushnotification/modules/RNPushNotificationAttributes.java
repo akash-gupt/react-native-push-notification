@@ -108,7 +108,7 @@ public class RNPushNotificationAttributes {
         smallIcon = bundle.getString(SMALL_ICON);
         bigText = bundle.getString(BIG_TEXT);
         subText = bundle.getString(SUB_TEXT);
-        bigPictureUrl= bundle.getString(BIG_PICTURE_URL);
+        bigPictureUrl= null;
         shortcutId = bundle.getString(SHORTCUT_ID);
         number = bundle.getString(NUMBER);
         channelId = bundle.getString(CHANNEL_ID);
@@ -151,7 +151,7 @@ public class RNPushNotificationAttributes {
             smallIcon = jsonObject.has(SMALL_ICON) ? jsonObject.getString(SMALL_ICON) : null;
             bigText = jsonObject.has(BIG_TEXT) ? jsonObject.getString(BIG_TEXT) : null;
             subText = jsonObject.has(SUB_TEXT) ? jsonObject.getString(SUB_TEXT) : null;
-            bigPictureUrl = jsonObject.has(BIG_PICTURE_URL) ? jsonObject.getString(BIG_PICTURE_URL) : null;
+            bigPictureUrl =  null;
             shortcutId = jsonObject.has(SHORTCUT_ID) ? jsonObject.getString(SHORTCUT_ID) : null;
             number = jsonObject.has(NUMBER) ? jsonObject.getString(NUMBER) : null;
             channelId = jsonObject.has(CHANNEL_ID) ? jsonObject.getString(CHANNEL_ID) : null;
@@ -204,7 +204,7 @@ public class RNPushNotificationAttributes {
         bundle.putString(SMALL_ICON, smallIcon);
         bundle.putString(BIG_TEXT, bigText);
         bundle.putString(SUB_TEXT, subText);
-        bundle.putString(BIG_PICTURE_URL, bigPictureUrl);
+        bundle.putString(BIG_PICTURE_URL, null);
         bundle.putString(SHORTCUT_ID, shortcutId);
         bundle.putString(NUMBER, number);
         bundle.putString(CHANNEL_ID, channelId);
