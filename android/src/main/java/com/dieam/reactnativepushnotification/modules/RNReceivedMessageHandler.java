@@ -112,7 +112,7 @@ public class RNReceivedMessageHandler {
             if(uri != null) {
                 String imageUrl = uri.toString();
               
-                bundle.putString("bigPictureUrl", imageUrl);
+                bundle.putString("bigPictureUrl", null);
                 bundle.putString("largeIconUrl", imageUrl);
             }
         }
