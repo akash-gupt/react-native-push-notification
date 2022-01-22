@@ -193,8 +193,8 @@ public class RNPushNotificationHelper {
       });
 
       aggregator.setLargeIconUrl(context, bundle.getString("largeIconUrl"));
-      aggregator.setBigLargeIconUrl(context, bundle.getString("bigLargeIconUrl"));
-      aggregator.setBigPictureUrl(context, bundle.getString("bigPictureUrl"));
+      aggregator.setBigLargeIconUrl(context, null);
+      aggregator.setBigPictureUrl(context, null);
     }
 
     public void sendToNotificationCentreWithPicture(Bundle bundle, Bitmap largeIconBitmap, Bitmap bigPictureBitmap, Bitmap bigLargeIconBitmap) {
