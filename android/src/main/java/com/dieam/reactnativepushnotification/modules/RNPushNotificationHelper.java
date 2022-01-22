@@ -193,7 +193,7 @@ public class RNPushNotificationHelper {
       });
 
       aggregator.setLargeIconUrl(context, bundle.getString("largeIconUrl"));
-      aggregator.setBigLargeIconUrl(context, bundle.getString("bigLargeIconUrl"));
+      aggregator.setBigLargeIconUrl(context, null);
       aggregator.setBigPictureUrl(context, null);
     }
 
