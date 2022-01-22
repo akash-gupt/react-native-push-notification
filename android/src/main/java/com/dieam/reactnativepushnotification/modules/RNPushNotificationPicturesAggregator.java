@@ -63,7 +63,7 @@ public class RNPushNotificationPicturesAggregator {
     this.downloadRequest(context, uri, new BaseBitmapDataSubscriber() {
       @Override
       public void onNewResultImpl(@Nullable Bitmap bitmap) {
-        aggregator.setBigPicture(bitmap);
+        aggregator.setBigPicture(null);
       }
 
       @Override
